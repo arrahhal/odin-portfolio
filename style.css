@@ -1,0 +1,26 @@
+:root {
+  --clr-fg: #f9f9f9;
+  --clr-bg-0: #323b43;
+  --clr-bg-1: #3c434e;
+  --clr-bg-2: #1a1e22;
+  --clr-accent-400: #d64f5d;
+
+  --screen-sm: '640px'; /* or 576px */
+  --screen-md: '768px'; /* or 960px */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  color: var(--clr-fg);
+  background-color: var(--clr-bg-0);
+  line-height: 1.4;
+  min-height: 100vh;
+}
