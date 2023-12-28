@@ -1,25 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Portfolio</title>
-</head>
-<body>
-    <header>
-        <nav class="nav-menu">
-            <li>Home</li>
-            <li>Blog</li>
-            <li>Contact</li>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <nav role="navigation" class="header__nav">
+          <ul role="list" class="nav__list">
+            <li class="list__item"><a href="#home">Home</a></li>
+            <li class="list__item"><a href="#projects">Projects</a></li>
+            <li class="list__item"><a href="#contact">Contact</a></li>
+          </ul>
         </nav>
-        <div class="socials"></div>
+        <nav role="navigation" class="header__nav header__nav--socials">
+          <ul role="list" class="nav__list list">
+            <li class="list__item">
+              <a href="">
+                <img src="./hash.svg" />
+              </a>
+            </li>
+            <li class="list__item">
+              <a href=""><img src="./matrix.svg" /></a>
+            </li>
+            <li class="list__item">
+              <a href=""><img src="./mastodon.svg" /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-        <section class="hero"></section>
-        <sectoin class="desc"></sectoin>
-        <section class="projects"></sction>
+      <section class="hero"></section>
+      <sectoin class="desc"></sectoin>
+      <section class="projects"></section>
     </main>
     <footer class="footer"></footer>
-</body>
+  </body>
 </html>
