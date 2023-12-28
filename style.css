@@ -161,3 +161,32 @@ section {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.contact {
+  background-color: var(--clr-bg-0);
+}
+
+.contact__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact__title {
+  font-size: var(--fz-lg);
+  margin-bottom: 1rem;
+}
+
+.contact__feild {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact__img {
+  width: 20rem;
+}
+footer {
+  text-align: center;
+  background-color: var(--clr-bg-0);
+}
