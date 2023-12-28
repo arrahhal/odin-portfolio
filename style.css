@@ -5,6 +5,13 @@
   --clr-bg-2: #1a1e22;
   --clr-accent-400: #d64f5d;
 
+  --fz-big: 4rem;
+  --fz-normal: 1.2rem;
+  --fz-small: 0.9rem;
+
+  --sz-lg: 6rem;
+  --sz-sm: 1.6rem;
+
   --screen-sm: "640px"; /* or 576px */
   --screen-md: "768px"; /* or 960px */
 
@@ -33,6 +40,7 @@ body {
   color: var(--clr-fg);
   background-color: var(--clr-bg-1);
   line-height: 1.4;
+  font-size: var(--fz-normal);
   min-height: 100vh;
 }
 
@@ -80,11 +88,42 @@ a {
   background: var(--clr-bg-2);
 }
 
-.header__nav--socials {
+.header__nav--social,
+.hero__social {
   --padding: 4px 2px;
   --gap: 4px;
 }
 
-.header__nav--socials img {
-  width: 1.2rem;
+.header__nav--social img,
+.hero__social img {
+  width: var(--sz-sm);
+}
+
+.hero {
+  background-image: url(./endless-constellation.svg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding-block: 1rem;
+}
+
+.hero__social .list__item:hover {
+  filter: brightness(90%);
+  background: none;
+}
+
+.hero__brand {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: var(--fz-big);
+}
+
+.hero__brand img {
+  width: var(--sz-lg);
+}
+
+.hero__bio {
+  font-size: var(--fz-small);
 }
