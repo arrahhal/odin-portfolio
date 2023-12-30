@@ -19,6 +19,17 @@
   --ctn-width: 60rem;
 }
 
+@media (max-width: 640px) {
+  :root {
+    --fz-xl: 2.5rem;
+    --fz-lg: 1.3rem;
+    --fz-normal: 0.8rem;
+    --fz-small: 0.7rem;
+    --sz-lg: 4rem;
+    --sz-sm: 1.3rem;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -173,6 +184,12 @@ section {
   gap: 1rem;
 }
 
+@media (max-width: 640px) {
+  .projects__container {
+    grid-template-columns: 1fr;
+  }
+}
+
 .project {
   padding: 1rem 2rem;
   height: 10rem;
@@ -216,6 +233,12 @@ section {
 .contact__img {
   width: 20rem;
 }
+@media (max-width: 640px) {
+  .contact__img {
+    width: 13rem;
+  }
+}
+
 footer {
   text-align: center;
   background-color: var(--clr-bg-0);
